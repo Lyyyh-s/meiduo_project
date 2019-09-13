@@ -126,6 +126,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
 CACHES = {
     "default": { # 默认
         "BACKEND": "django_redis.cache.RedisCache",
